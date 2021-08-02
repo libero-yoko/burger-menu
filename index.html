@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSB Challenge</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex flex-col min-h-screen bg-white border-primary border-lg">
+    <!-- Nav Bar -->
+    <header class="flex justify-between p-6">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#locations"
+              ><div class="main-nav__link-icon">
+                <img
+                  src="/src/static/img/gsb-icon-locations-8.png"
+                  alt="Locations Icon"
+                  srcset="/src/static/img/gsb-icon-locations@2x.png 2x"
+                />
+              </div>
+              <div class="main-nav__link-text">Locations</div></a
+            >
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#locations"
+              ><div class="main-nav__link-icon">
+                <img
+                  src="/src/static/img/gsb-icon-order-8.png"
+                  alt="Order Online Icon"
+                  srcset="/src/static/img/gsb-icon-order@2x.png 2x"
+                />
+              </div>
+              <div class="main-nav__link-text">Order Online</div></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger Menu Button -->
+      <div
+        class="grid grid-cols-2 w-40 h-12 place-content-center grid-flow-row"
+        id="drop-menu-open"
+        tabindex="1"
+      >
+        <button class="self-center">
+          <img
+            src="/src/static/img/gsb-logo-8.png"
+            alt="Menu Logo"
+            srcset="/src/static/img/gsb-logo@2x.png 2x"
+          />
+        </button>
+        <button class="self-center p-6">
+          <img
+            src="/src/static/img/gsb-icon-hamburger-open-8.png"
+            alt="Menu Icon"
+            srcset="/src/static/img/gsb-icon-hamburger-open@2x.png 2x"
+          />
+        </button>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main id="main" class="grid flex-grow p-6 bg-white place-content-center">
+      <article class="flex flex-col justify-center py-12">
+        <img
+          src="/src/static/img/gsb-logo-wordmark-8.png"
+          alt="Great State Burger"
+          srcset="/src/static/img/gsb-logo-wordmark@2x.png 2x"
+          class="max-w-full mx-auto"
+        />
+
+        <p class="mt-6 md:mt-12">
+          Af en toe, wanneer ik mijn jager of houthakker goed kende, heb ik
+          diens getuigenis gebruikt, maar nooit zonder haar zorgvuldig te
+          overwegen, en altijd stelde ik haar, wanneer dat mogelijk was, op de
+          proef, door het bewuste dier dagen of weken gade te slaan, tot ik zelf
+          zag dat alles waar was.
+        </p>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-6 bg-primary">
+      <div class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link link-effect" href="/">Home</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link link-effect" href="#locations"
+              >Locations</a
+            >
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link link-effect" href="#menu">Menu</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link link-effect" href="#about">About</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link link-effect" href="#catering"
+              >Catering</a
+            >
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link link-effect" href="#jobs">Jobs</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!--Dropdown Menu-->
+    <div
+      id="drop-nav"
+      class="
+        fixed
+        top-0
+        left-0
+        w-full
+        h-full
+        flex flex-col
+        p-1
+        border-lg border-white
+        justify-between
+        text-center
+        transition
+        duration-500
+        ease-in-out
+        -top-full
+        link-effect
+      "
+    >
+      <div class="flex justify-between p-6 order-first md:order-2">
+        <!-- Hamburger Menu Button -->
+        <div
+          class="
+            grid grid-cols-2
+            w-40
+            h-12
+            place-content-center
+            grid-flow-row
+            drop-menu-header
+            mx-auto
+          "
+          id="drop-menu-close"
+        >
+          <button>
+            <img
+              src="/src/static/img/gsb-logo-8.png"
+              alt="Mobile Nav Button Logo"
+              title="Mobile Nav Button Logo"
+              srcset="/src/static/img/gsb-logo@2x.png 2x"
+            />
+          </button>
+          <button>
+            <img
+              src="/src/static/img/gsb-icon-hamburger-close-8.png"
+              alt="Mobile Nav Button Icon"
+              title="Mobile Nav Button Icon"
+              srcset="/src/static/img/gsb-icon-hamburger-close@2x.png 2x"
+            />
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Nav Content -->
+      <ul
+        title="Mobile Nav List"
+        class="
+          drop-menu-content
+          flex flex-col
+          justify-center
+          text-2xl text-white
+          font-bold
+          h-full
+          justify-evenly
+          md:text-4xl md:order-3
+        "
+      >
+        <li><a tabindex="1" href="#home">HOME</a></li>
+        <li><a tabindex="2" href="#locations">LOCATIONS</a></li>
+        <li><a tabindex="3" href="#menu">MENU</a></li>
+        <li><a tabindex="4" href="#about">ABOUT</a></li>
+        <li><a tabindex="5" href="#catering">CATERING</a></li>
+        <li><a tabindex="6" href="#job">JOBS</a></li>
+      </ul>
+      <!-- Mobile Location Order Nav -->
+      <div class="drop-menu-footer justify-center h-40 md:order-1 flex">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a tabindex="7" class="main-nav__link" href="#locations"
+                ><div class="main-nav__link-icon main-nav__mobile-link-icon">
+                  <img
+                    src="/src/static/img/gsb-icon-locations-8.png"
+                    alt="Locations Icon"
+                    srcset="/src/static/img/gsb-icon-locations@2x.png 2x"
+                  />
+                </div>
+                <div class="main-nav__link-text text-white">LOCATIONS</div></a
+              >
+            </li>
+            <li class="main-nav__item">
+              <a tabindex="8" class="main-nav__link" href="#locations"
+                ><div class="main-nav__link-icon main-nav__mobile-link-icon">
+                  <img
+                    src="/src/static/img/gsb-icon-order-8.png"
+                    alt="Order Online Icon"
+                    srcset="/src/static/img/gsb-icon-order@2x.png 2x"
+                  />
+                </div>
+                <div class="main-nav__link-text text-white">
+                  ORDER ONLINE
+                </div></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
